@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KompaCenter - Reparación y Tecnología</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        /* HERO */
+        .hero{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:2rem;
+            margin:3rem 0;
+            flex-wrap:wrap;
+        }
+
+        .hero-text{
+            flex:1;
+            min-width:280px;
+        }
+
+        .hero-text h1{
+            font-size:3rem;
+            margin-bottom:1rem;
+        }
+
+        .hero-text .sub{
+            font-size:1.3rem;
+            color:#00ff88;
+        }
+
+        .hero-text .desc{
+            margin-top:1.5rem;
+            font-size:1.08rem;
+        }
+
+        .personaje{
+            flex:0 0 320px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .personaje img{
+            width:100%;
+            max-width:260px;
+            height:auto;
+
+            /* QUITA EL MARCO */
+            background:transparent;
+            box-shadow:none;
+            border:none;
+            border-radius:0;
+
+            filter:drop-shadow(0 0 18px rgba(0,255,136,0.18));
+        }
+
+        /* Widgets */
+        .widgets{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:2rem;
+            margin:3rem 0;
+        }
+
+        .widget{
+            background:#161616;
+            border-radius:18px;
+            padding:1.8rem;
+            border:1px solid #2e2e2e;
+            transition:0.3s;
+        }
+
+        .widget:hover{
+            transform:translateY(-3px);
+            border-color:#00ff88;
+        }
+
+        .widget h2{
+            color:#00ff88;
+            margin-bottom:1rem;
+            border-bottom:2px solid #00ff88;
+            padding-bottom:10px;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:900px){
+
+            .hero{
+                flex-direction:column-reverse;
+                text-align:center;
+            }
+
+            .hero-text h1{
+                font-size:2.3rem;
+            }
+
+            .widgets{
+                grid-template-columns:1fr;
+            }
+
+            .personaje{
+                flex:none;
+            }
+
+            .personaje img{
+                max-width:210px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <div class="nav-container">
+
+            <!-- LOGO + MENU EN UNA SOLA FILA -->
+            <div class="top-bar">
+
+                <div class="logo">
+                    <img src="img/banner.png" alt="KompaCenter Logo">
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="apps/index.html">Apps</a></li>
+                    <li><a href="programas/index.html">Programas</a></li>
+                    <li><a href="frp/index.html">FRP</a></li>
+                    <li><a href="reparaciones/index.html">Reparaciones</a></li>
+                    <li><a href="blog/index.html">Blog</a></li>
+                    <li><a href="contacto/index.html">Contacto</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Banner -->
+        <div class="banner-slider">
+            <div class="slider-track">
+                <img src="img/banner-largo.png" alt="Banner KompaCenter">
+                <img src="img/banner-largo.png" alt="Banner KompaCenter">
+            </div>
+        </div>
+
+        <!-- Redes -->
+        <div class="social-bar">
+
+            <div class="social-icons">
+
+                <a href="https://wa.me/523121234567" target="_blank">
+                    <img src="img/whatsapp.png" alt="WhatsApp">
+                </a>
+
+                <a href="https://facebook.com/tupagina" target="_blank">
+                    <img src="img/facebook.png" alt="Facebook">
+                </a>
+
+                <a href="https://instagram.com/tupagina" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="https://tiktok.com/@tupagina" target="_blank">
+                    <img src="img/tiktok.png" alt="TikTok">
+                </a>
+
+                <a href="mailto:tuemail@ejemplo.com">
+                    <img src="img/email.png" alt="Correo">
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Info -->
+        <div class="business-info">
+
+            <div style="max-width:1100px; margin:0 auto; padding:0 20px;">
+
+                <p>
+                    <strong>Horario:</strong>
+                    Lunes a Viernes 9:00 am - 7:00 pm |
+                    Sábado 9:00 am - 4:00 pm
+                </p>
+
+                <p>
+                    <strong>Dirección:</strong>
+                    Escribe tu dirección completa aquí, Ciudad Guzmán, Jalisco
+                    <br>
+
+                    <a href="https://maps.google.com/?q=Tu+Dirección+Exacta+Ciudad+Guzman"
+                       target="_blank"
+                       style="color:#00ff88; text-decoration:none;">
+
+                        📍 Ver ruta en Google Maps
+
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO -->
+    <div class="main-content">
+
+        <!-- HERO -->
+        <div class="hero">
+
+            <div class="hero-text">
+
+                <h1>Bienvenido a KompaCenter</h1>
+
+                <p class="sub">
+                    El centro de creación y reparación de tecnología
+                </p>
+
+                <p class="desc">
+                    Soy un técnico de reparación de celulares,
+                    aficionado a la programación y a la electrónica.
+                </p>
+
+            </div>
+
+            <div class="personaje">
+                <img src="img/personaje.png" alt="Personaje KompaCenter">
+            </div>
+
+        </div>
+
+        <!-- Widgets -->
+        <div class="widgets">
+
+            <div class="widget">
+
+                <h2>Últimas Reparaciones</h2>
+
+                <p>
+                    Aquí aparecerán las últimas reparaciones realizadas.
+                </p>
+
+                <p style="margin-top:1rem; color:#aaa;">
+                    (Se llenará cuando crees la página de reparaciones)
+                </p>
+
+            </div>
+
+            <div class="widget">
+
+                <h2>Últimos del Blog</h2>
+
+                <p>
+                    Artículos recientes sobre tecnología y trucos útiles.
+                </p>
+
+                <p style="margin-top:1rem; color:#aaa;">
+                    (Se llenará cuando crees la página de blog)
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- TEXTO FINAL -->
+        <div class="footer-text">
+
+            <p>
+                Aquí encontrarás parte de mi trabajo de reparaciones de teléfonos,
+                algunos proyectos que he hecho para PC y celulares,
+                blogs de tecnología, herramientas útiles,
+                desbloqueos FRP, programas, apps y más.
+            </p>
+
+            <p class="gracias">
+                Gracias por su visita
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>
