@@ -1,144 +1,82 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KompaCenter - Reparación y Tecnología</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #0a0a0a;
-    color: #e0e0e0;
-    line-height: 1.6;
-    overflow-y: auto; /* Asegura que el scroll vertical esté activo */
-    min-height: 100vh; /* Asegura que la página use todo el alto de la pantalla */
-}
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="img/banner.png" alt="KompaCenter Logo">
+            </div>
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="apps/index.html">Apps</a></li>
+                <li><a href="programas/index.html">Programas</a></li>
+                <li><a href="frp/index.html">FRP</a></li>
+                <li><a href="reparaciones/index.html">Reparaciones</a></li>
+                <li><a href="blog/index.html">Blog</a></li>
+                <li><a href="contacto/index.html">Contacto</a></li>
+            </ul>
+        </div>
 
-/* ===================== HEADER ===================== */
-header {
-    background: #111;
-    border-bottom: 1px solid #333;
-}
+        <div class="social-bar">
+            <div class="social-icons">
+                <a href="https://wa.me/523411351146" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://facebook.com/KompaFix" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com/elkompameno" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://tiktok.com/@elkompameno" target="_blank"><img src="img/tiktok.png" alt="TikTok"></a>
+                <a href="mailto:elkompafix@gmail.com"><img src="img/email.png" alt="Correo"></a>
+            </div>
+        </div>
 
-.nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 1.2rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: 2rem;
-}
+        <div class="business-info">
+            <p><strong>Horario:</strong> Lunes a Sabado 9:00 am - 9:00 pm | Domingo 9:00 am - 2:00 pm</p>
+            <p>
+                <strong>Dirección:</strong> Hidalgo #74 Jiquilpan, Jalisco 
+                <a href="https://maps.app.goo.gl/GxBU3ZijnmTek3wc6" target="_blank" style="color:#00ff88;">→ Ir a ruta</a>
+            </p>
+        </div>
+    </header>
 
-.logo img {
-    height: 62px;
-    width: auto;
-}
+    <div class="main-content">
 
-.nav-menu {
-    display: flex;
-    gap: 1.3rem;
-    list-style: none;
-    margin-left: auto;
-}
+        <div class="hero">
+            <div class="hero-text">
+                <h1>Bienvenido a KompaCenter</h1>
+                <p><strong>El centro de creación y reparación de tecnología</strong></p>
+                <br>
+                <p>Soy un técnico de reparación de celulares, aficionado a la programación, y a la electrónica.</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/personaje.png" alt="Personaje KompaCenter">
+            </div>
+        </div>
 
-.nav-menu a {
-    color: #ddd;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 8px;
-    transition: all 0.3s;
-    white-space: nowrap;
-}
+        <div class="widgets">
+            <div class="widget">
+                <h2>Últimas Reparaciones</h2>
+                <p>Aquí se mostrarán las últimas reparaciones realizadas.</p>
+            </div>
+            <div class="widget">
+                <h2>Últimos del Blog</h2>
+                <p>Aquí se mostrarán los artículos más recientes.</p>
+            </div>
+        </div>
 
-.nav-menu a:hover,
-.nav-menu a.active {
-    background: #00ff88;
-    color: black;
-}
+        <div style="margin-top: 3rem; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; color:#bbb;">
+            <p>Aquí encontrarás parte de mi trabajo de reparaciones de teléfonos, algunos proyectos que he hecho para PC y para celulares, blogs de distintos temas de tecnología y herramientas útiles como desbloqueos FRP, programas, Apps, etc.</p>
+            <p><strong>Es de uso personal pero quiero compartir lo que les pueda servir.</strong></p>
+            <p>Gracias por su visita.</p>
+        </div>
 
-/* Responsive - Solo en pantallas pequeñas */
-@media (max-width: 992px) {
-    .nav-container {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .nav-menu {
-        margin-left: 0;
-        justify-content: center;
-        width: 100%;
-    }
-}
+    </div>
 
-/* ===================== CONTENIDO ===================== */
-.main-content {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
-/* Hero */
-.hero {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    margin: 3rem 0;
-    flex-wrap: wrap;
-}
-
-.hero-text {
-    flex: 1;
-    min-width: 300px;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.8rem;
-    color: #00ff88;
-}
-
-.hero-image {
-    flex: 1;
-    max-width: 340px;
-}
-
-.hero-image img {
-    border-radius: 18px;
-    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
-}
-
-/* Widgets */
-.widgets {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-    gap: 2rem;
-    margin: 3.5rem 0;
-}
-
-.widget {
-    background: #1a1a1a;
-    border-radius: 16px;
-    padding: 1.8rem;
-}
-
-/* Responsive */
-@media (max-width: 992px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        text-align: center;
-    }
-}
+    <script src="js/main.js"></script>
+</body>
+</html>
